@@ -34,7 +34,7 @@ const database = function () {
             });
 
         } else if (answers.todo === 'View All Roles') {
-            db.query(`SELECT * FROM roles`, (err, result) => {
+            db.query(`SELECT * FROM role`, (err, result) => {
                 if (err) throw err;
                 console.log("Viewing all Roles: ");
                 console.table(result);
@@ -189,9 +189,21 @@ const database = function () {
                 },
             ])
 
+            .then((inputName) => {
+                const { firstname, lastname, position, manager } = inputName;
+                db.query(`INSERT INTO employee (first_name, last_name, role, manager) VALUES (?,?,?,?)`, [firstname, lastname, position, manager], (err, result) => {
+                    if (err) throw err;
+                    console.log(`${firstname} ${lastname} has been added!`);
+                    console.table(result);
+                    database(); 
+                })
+            })
+
+        } else if (answers.todo === 'Update Employee Role') {
+            
         }
-        
+
     })
 };
 
-
+database();
