@@ -20,7 +20,7 @@ var database = function () {
         type: 'list',
         name: 'prompt',
         message: 'What would you like to do?',
-        choices: ['View All Department', 'View All Roles', 'View All Employees', 'Add A Department', 'Add A Role', 'Add An Employee', 'Update An Employee Role', 'Log Out']
+        choices: ['View All Department', 'View All Roles', 'View All Employees', 'Add A Department', 'Add A Role', 'Add An Employee', 'Update An Employee Role', 'End Session']
     }]).then((answers) => {
 
         // Views the Department Table in the Database
@@ -274,9 +274,9 @@ var database = function () {
                 })
             });
             
-        } else if (answers.prompt === 'Log Out') {
+        } else if (answers.prompt === 'End Session') {
             db.end();
-            console.log("Good-Bye!");
+            console.log("Have a good day!");
         }
     })
 };
