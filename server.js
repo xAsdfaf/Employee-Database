@@ -14,7 +14,7 @@ const db = mysql.createConnection(
     console.log(`Connected to the company_db database.`)
 );
 
-var database = function () {
+const database = function () {
     inquirer.prompt([{
         // Begin Command Line
         type: 'list',
