@@ -153,7 +153,7 @@ var database = function () {
                             if (firstNameInput) {
                                 return true;
                             } else {
-                                console.log('Please Add A First Name!');
+                                console.log('Please input their name!');
                                 return false;
                             }
                         }
@@ -167,7 +167,7 @@ var database = function () {
                             if (lastNameInput) {
                                 return true;
                             } else {
-                                console.log('Please Add A Salary!');
+                                console.log('Please input their name!');
                                 return false;
                             }
                         }
