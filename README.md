@@ -1,5 +1,7 @@
 # Best Employee Database
 
+## [Video Link](https://www.youtube.com/watch?v=-zmW6Z4mKgQ&ab_channel=Asdfaf)
+
 ## License: MIT  ![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
 ### https://choosealicense.com/licenses/mit/
 
